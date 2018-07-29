@@ -6,7 +6,7 @@ android {
         applicationId "com.li.updateversion"
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 1
+        versionCode 3
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -14,6 +14,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("boolean", "IS_DEBUG_ON", "false")
+        }
+        debug {
+            buildConfigField("boolean", "IS_DEBUG_ON", "true")
         }
     }
 }
@@ -25,4 +29,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //权限请求库
+    implementation 'com.yanzhenjie:permission:2.0.0-rc11'
+    //网络请求库
+    implementation 'org.xutils:xutils:3.3.34'
 }

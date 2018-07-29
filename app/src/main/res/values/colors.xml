@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="check_update_bt_color">#199BD7</color>
+    <color name="order_detail_btn_stroke_color">#026cb9</color>
+    <color name="order_detail_bt_unpressed">#EEEEEE</color>
+    <color name="tv_text_hint">#434e60</color>
 </resources>
